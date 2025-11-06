@@ -9,12 +9,14 @@ def find_max_number(num1, num2, num3):
 
 def find_mean(num1, num2, num3):
     total = num1 + num2 + num3 
-    return (num1 + num2 + num3) /3   
+    return (total) / 3
 
 def find_mean_std(num1, num2, num3):
-    total =  num1 + num2 + num3
-    mean = (num1 + num2 + num3) / 3
-    std_dev = math.sqrt(((num1 - mean) ** 2) + (num2 - mean) ** 2 + (num3 - mean) ** 2) / 3
+    total = (num1 + num2 + num3)
+    mean = (total) / 3
+    std_dev = (((num1 - mean) ** 2 + (num2 - mean) ** 2 + (num3 - mean) ** 2) / 3) ** 0.5
     return mean, std_dev
+
+    
  
 
